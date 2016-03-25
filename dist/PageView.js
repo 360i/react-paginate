@@ -47,8 +47,8 @@ var PageView = function (_React$Component) {
         'li',
         { className: cssClassName },
         _react2.default.createElement(
-          'a',
-          _extends({}, this.props, { href: '#', className: linkClassName }),
+          'span',
+          _extends({}, this.props, { className: linkClassName }),
           this.props.page
         )
       );
