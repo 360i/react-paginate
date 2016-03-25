@@ -45,9 +45,9 @@ export default class PaginationBoxView extends Component {
     super(props);
 
     this.state = {
-      selected: props.initialSelected ? props.initialSelected : 
-                props.forceSelected   ? props.forceSelected : 
-                0 
+      selected: props.initialSelected ? props.initialSelected :
+                props.forceSelected   ? props.forceSelected :
+                0
     };
   }
 
@@ -102,7 +102,7 @@ export default class PaginationBoxView extends Component {
     return (
       <ul className={this.props.containerClassName}>
         <li onClick={this.handlePreviousPage} className={previousClasses}>
-          <a href="#" className={this.props.previousLinkClassName}>{this.props.previousLabel}</a>
+          <span className={this.props.previousLinkClassName}>{this.props.previousLabel}</span>
         </li>
 
         <li>
@@ -121,7 +121,7 @@ export default class PaginationBoxView extends Component {
         </li>
 
         <li onClick={this.handleNextPage} className={nextClasses}>
-          <a href="#" className={this.props.nextLinkClassName}>{this.props.nextLabel}</a>
+          <span className={this.props.nextLinkClassName}>{this.props.nextLabel}</span>
         </li>
       </ul>
     );

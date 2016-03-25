@@ -17,9 +17,9 @@ export default class PageView extends React.Component {
 
     return (
         <li className={cssClassName}>
-            <a {...this.props} href="#" className={linkClassName}>
+            <span {...this.props} className={linkClassName}>
               {this.props.page}
-            </a>
+            </span>
         </li>
     );
   }
